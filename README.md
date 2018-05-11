@@ -6,4 +6,4 @@ https://imgur.com/AnWbf8Y
 
 As listed on Microsoft's site, the license is MIT; however, after reversing the "secured" part of the script, the author is "claiming" the script is actually under GNU GPL Version 3 or later.
 
-At this time, this repo currently is bound by both licenses. All changes will be noted as required.
+At this time, this repo currently is bound by both licenses. All changes will be noted as required in a new file called Sec-Audit-Modified.ps1.
