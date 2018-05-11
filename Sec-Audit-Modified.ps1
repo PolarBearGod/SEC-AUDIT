@@ -46,6 +46,7 @@ Write-Host 1.0. LICENSE INFORMATION
 Write-Host ======================== 
 Write-Output '
 PowerPower Shell Script for Windows Server Compliance / Security Configuration Audit.
+This is bound by MIT and GPLv3 or later.
 '
 "`n"
 
