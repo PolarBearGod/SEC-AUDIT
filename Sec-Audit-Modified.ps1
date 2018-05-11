@@ -44,7 +44,6 @@ This is bound by MIT and GPLv3 or later.
 '
 "`n"
 
-
 Write-Host =======================
 Write-Host 1.1. AUTHOR INFORMATION 
 Write-Host ======================= 
