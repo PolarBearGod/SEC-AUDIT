@@ -46,38 +46,16 @@ Write-Host 1.0. LICENSE INFORMATION
 Write-Host ======================== 
 Write-Output '
 PowerPower Shell Script for Windows Server Compliance / Security Configuration Audit.
-Copyright (C) 2016  Sikkandar Sha / Email: sikkandar.lynx@gmail.com
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see (http://www.gnu.org/licenses/).'
+'
 "`n"
 
 Write-Host =======================
 Write-Host 1.1. AUTHOR INFORMATION 
 Write-Host ======================= 
 
-$Author = @"
-  _________.__ __    __                       .___                _________.__            
- /   _____/|__|  | _|  | _______    ____    __| _/____ _______   /   _____/|  |__ _____   
- \_____  \ |  |  |/ /  |/ /\__  \  /    \  / __ |\__  \\_  __ \  \_____  \ |  |  \\__  \  
- /        \|  |    <|    <  / __ \|   |  \/ /_/ | / __ \|  | \/  /        \|   Y  \/ __ \_
-/_______  /|__|__|_ \__|_ \(____  /___|  /\____ |(____  /__|    /_______  /|___|  (____  /
-        \/         \/    \/     \/     \/      \/     \/                \/      \/     \/ 
-        '
-"@
+$Author = @"__PLACE AUTHOR HERE__"@
 
 Write-Output $Author
-Write-Output "Email: sikkandar.lynx@gmail.com || Release Date: 15-August-2016"
 "`n"
 
 Write-Host BEGINNING TO RETRIEVE CONFIGURATION. PLEASE WAIT... -ForegroundColor Yellow -BackgroundColor Black
