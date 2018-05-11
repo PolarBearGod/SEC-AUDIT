@@ -6,30 +6,24 @@ $DumpFilePath = "$CurrentDir\"+$ServerName+"-CONFIG_DUMP_$(get-date -Format yyyy
 Start-Transcript -Path $DumpFilePath -NoClobber
 
 Write-Host
-Write-Host 'Checking if your PowerShell Script Execution Policy is set to Unrestricted' -ForegroundColor Yellow -BackgroundColor Black
+Write-Host 'Checking if your PowerShell Script Execution Policy is set to Unrestricted'
 Start-Sleep -s 5
 Write-Host
 $ExecutionPolicy = Get-ExecutionPolicy
 $ScriptExecution = "Unrestricted"
     If ($ExecutionPolicy -eq $ScriptExecution) 
         {
-            Write-Host 'Yay! your PowerShell Script Execution Policy is already set to ' $ExecutionPolicy -ForegroundColor Yellow -BackgroundColor Black
+            Write-Host 'PowerShell Script Execution Policy is already set to ' $ExecutionPolicy
         }
     Else
         {
-            Write-Host Your PowerShell Script Execution Policy is set to $ExecutionPolicy -ForegroundColor Yellow -BackgroundColor Black
-            Write-Host
-            Write-Host 'This policy should be set to Unrestricted for the script to execute properly.' -ForegroundColor Magenta -BackgroundColor Black
-            Write-Host
-            Write-Host 'This change will be reverted back to its original state after script execution is complete.' -ForegroundColor Magenta -BackgroundColor Black
-            Write-Host
-            Write-Host 'Setting PowerShell Script Execution Policy to Unrestricted automatically. Please Wait...'
+            Write-Host 'Your PowerShell Script Execution Policy is set to ' $ExecutionPolicy.
+            Write-Host 'This policy should be set to Unrestricted for the script to execute properly.'
+            Write-Host 'This change will be reverted back to its original state after script execution is complete.'
+            Write-Host 'Setting PowerShell Script Execution Policy to Unrestricted. Please Wait...'
             Start-Sleep -s 5
-            
             Set-ExecutionPolicy Unrestricted -force
-        
-            Write-Host
-            Write-Host 'PowerShell Script Execution Policy is now set to Unrestricted.' -ForegroundColor Yellow -BackgroundColor Black
+            Write-Host 'PowerShell Script Execution Policy is now set to Unrestricted.'
             Start-Sleep -s 5
         }
 "`n"
@@ -59,7 +53,7 @@ $Author = @"__PLACE AUTHOR HERE__"@
 Write-Output $Author
 "`n"
 
-Write-Host BEGINNING TO RETRIEVE CONFIGURATION. PLEASE WAIT... -ForegroundColor Yellow -BackgroundColor Black
+Write-Host BEGINNING TO RETRIEVE CONFIGURATION. PLEASE WAIT...
 Write-Host Please close all other windows until the retrieval is complete.
 Write-Host
 Start-Sleep -s 5
@@ -2048,19 +2042,16 @@ Write-Host
 "`n"
 
 Write-Host
-Write-Host Script execution complete. Please Wait... -ForegroundColor Yellow -BackgroundColor Black
+Write-Host 'Script execution complete. Please Wait... '
 Write-Host
 Start-Sleep -s 5
-Write-Host Reverting the PowerShell script execution policy to $ExecutionPolicy -ForegroundColor Yellow -BackgroundColor Black
+Write-Host 'Reverting the PowerShell script execution policy to ' $ExecutionPolicy
     
     Start-Sleep -s 5
     Set-ExecutionPolicy $ExecutionPolicy -force
 
 Write-Host
-Write-Host The PowerShell Script Execution Policy setting has been reverted back to $ExecutionPolicy -ForegroundColor Yellow -BackgroundColor Black
-Write-Host 
-Write-Host All done. Have a good day.
-Write-Host
+Write-Host 'The PowerShell Script Execution Policy setting has been reverted back to ' $ExecutionPolicy
 
 #STOP RECORDING TRANSCRIPT
 Stop-Transcript
